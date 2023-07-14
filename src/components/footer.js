@@ -1,7 +1,7 @@
 
 function footer() {
   return (
-    <footer className ="pb-4">
+    <footer className ="pb-4 font-raleway">
       <div className="flex flex-col items-center">
         <hr className="w-1/2 border-secondary"/>
         <div className="py-2">

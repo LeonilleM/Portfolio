@@ -1,24 +1,31 @@
-function navbar() {
+import  Link  from "next/link"
+
+const NavBar = () => {
   return (
     <div>
-      <div className="flex flex-wrap items-center justify-between py-5 mx-12">
-        <h1 className="text-3xl font-bold text-primary">Leonille Matunan</h1>
+      <div className="flex flex-wrap items-center justify-between py-5 container mx-auto font-raleway text-primary">
+        <Link href="/">
+        <h1 className="text-3xl font-medium">Leonille Matunan</h1>
+        </Link>
+      
         <div>
+          <div className="hidden sm:block">
           <ul className="flex flex-wrap justify-between items-center space-x-5">
-            <li>
-              <a href="#" className="text-lg font-medium text-dark">About</a>
+          <li>
+              <a href="#" className="text-lg font-medium">About</a>
             </li>
             <li>
-              <a href="#" className="text-lg font-medium text-dark">Projects</a>
+              <a href="#" className="text-lg font-medium">Projects</a>
             </li>
             <li>
-              <a href="#" className="text-lg font-medium text-dark">Resume</a>
+              <a href="#" className="text-lg font-medium">Resume</a>
             </li>
           </ul>
+        </div>
         </div>
       </div>
     </div>
   )
 }
 
-export default navbar
+export default NavBar

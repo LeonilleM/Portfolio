@@ -7,7 +7,7 @@ function main() {
     return (
         <div className="px-4 flex flex-col md:items-center">
             <div className="pt-16 pb-28 px-4 sm:px-8 md:px-16 lg:px-24">
-                <h1 className="text-2xl text-primary font-raleway font-thin">Programmer / Student </h1>
+                <h1 className="text-2xl text-primary font-raleway font-light">Programmer / Student </h1>
                 <h1 className="text-7xl font-roboto text-primary">Leonille</h1>
                 <h1 className="text-7xl font-roboto text-primary">Matunan</h1>
                 <div className="flex items-center mt-4 pt-5 sm:mt-8 px-2 lg:w-[720px]">
