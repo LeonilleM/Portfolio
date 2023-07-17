@@ -1,6 +1,6 @@
 const ProjectsPortion = () => {
     return (
-        <div>
+        <div id ="project-section">
             <div className="pt-20 pb-20 container mx-auto lg:px-40 text-darkgray-c">
                 <h1 className="text-5xl text-darker font-roboto">Portfolio</h1>
                 <div className="py-2 space-y-20">

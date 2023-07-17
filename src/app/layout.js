@@ -1,5 +1,5 @@
 import './globals.css'
-import {raleway} from './fonts.js'
+import {raleway} from '../style/fonts.js'
 
 export default function RootLayout({ children }) {
   return (
