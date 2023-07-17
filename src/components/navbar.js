@@ -11,15 +11,15 @@ const NavBar = () => {
         <div>
           <div className="hidden sm:block">
           <ul className="flex flex-wrap justify-between items-center space-x-5">
-          <li>
-              <a href="#" className="text-lg font-medium">About</a>
-            </li>
-            <li>
-              <a href="#" className="text-lg font-medium">Projects</a>
-            </li>
-            <li>
-              <a href="#" className="text-lg font-medium">Resume</a>
-            </li>
+          <Link href ="/" className="text-lg font-medium">
+          About
+          </Link>
+          <Link href ="/" className="text-lg font-medium">
+          Portfolio
+          </Link>
+          <Link href ="/" className="text-lg font-medium">
+          Resume
+          </Link>
           </ul>
         </div>
         </div>
