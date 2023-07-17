@@ -27,20 +27,6 @@ const ProjectsPortion = () => {
                             <p>Project description goes here.</p>
                         </div>
                     </div>
-
-                    {/* Project Three */}
-                    <div className="flex flex-col md:flex-row md:space-x-24">
-                        <div className="border rounded-lg border-darker w-[600px] h-[400px]"></div>
-                        <div className="flex flex-col md:flex-row md:space-x-24 font-roboto">
-                           <div className ="flex flex-col">
-                           <h2 className="text-3xl">Project Title</h2>
-                           <p>Short Descp.</p>
-                           </div>
-                            <p>Project description goes here.</p>
-                        </div>
-                    </div>
-                    
-                  
                 </div>
 
             </div>
