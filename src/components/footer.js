@@ -9,8 +9,6 @@ function footer() {
     const email = 'leonille@uw.edu';
     navigator.clipboard.writeText(email);
     setIsCopied(true);
-
-
     //Delay
     setTimeout(() => {
       setIsCopied(false);
@@ -19,7 +17,7 @@ function footer() {
   };
 
   return (
-    <footer className="pb-8 font-raleway">
+    <footer className="pb-8 font-raleway bottom-0">
       <div className="flex flex-col items-center">
         <hr className="w-1/2 border-secondary" />
         <div className="py-3">
@@ -32,7 +30,7 @@ function footer() {
             </li>
             <li>
               <a
-                className="hover:text-dark duration-500 hover:text-lg"
+                className="hover:text-dark duration-500 transform hover:text-lg"
                 href="/">
                 Resume
               </a>
@@ -44,7 +42,7 @@ function footer() {
               >
                 Email
               </button>
-              {isCopied && <span className="ml-2 text-green-500">Copied!</span>}
+              {isCopied && <span className="ml-2 text-dark">Copied!</span>}
             </li>
             <li>
               <Link

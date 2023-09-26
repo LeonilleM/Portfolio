@@ -27,18 +27,19 @@ function Main() {
               <Link href="https://www.linkedin.com/in/leonille-matunan/" target="_blank">
                 <Image
                   src={LinkedInLogo}
-                  className={`w-8 h-8 sm:w-10 sm:h-10 ml-2 sm:ml-4 mb-2 sm:mb-0 ${isLinkedInHovered ? 'transform -translate-y-2' : ''}`}
+                  className={`w-8 h-8 sm:w-10 sm:h-10 ml-2 sm:ml-4 mb-2 transition-transofmr ease-in-out delay-150 duration-300 ${isLinkedInHovered ? 'scale-125' : 'scale-100'}`}
                   onMouseEnter={() => setIsLinkedInHovered(true)}
                   onMouseLeave={() => setIsLinkedInHovered(false)}
                 />
               </Link>
               <Link href="https://github.com/LeonilleM" target="_blank">
                 <Image
-                  src={GitHubLogo}
-                  className={`w-8 h-8 sm:w-10 sm:h-10 ml-2 sm:ml-4 ${isGitHubHovered ? 'transform -translate-y-2' : ''}`}
-                  onMouseEnter={() => setIsGitHubHovered(true)}
-                  onMouseLeave={() => setIsGitHubHovered(false)}
-                />
+                 src={GitHubLogo}
+                 className={`w-8 h-8 sm:w-10 sm:h-10 ml-2 sm:ml-4 transition-transform ease-in-out delay-150 duration-300 transform ${isGitHubHovered ? 'scale-125' : 'scale-100'}`}
+                 onMouseEnter={() => setIsGitHubHovered(true)}
+                 onMouseLeave={() => setIsGitHubHovered(false)}
+                 alt="GitHub Logo"
+               />
               </Link>
             </div>
           </div>
