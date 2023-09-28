@@ -15,7 +15,7 @@ const NavBar = () => {
           className="text-lg font-medium">
                {/* first hover effect */}<p className="relative group hover:text-dark">  <span>About</span>  <span className="absolute -bottom-0 left-0 w-0 h-7 bg-darker/30 transition-all duration-500 group-hover:w-full"></span></p>
           </Link>
-          <Link href ="/" className="text-lg font-medium">
+          <Link href ="/#project-section" className="text-lg font-medium">
          {/* first hover effect */}<p className="relative group hover:text-dark">  <span>Portfolio</span>  <span className="absolute -bottom-0 left-0 w-0 h-7 bg-darker/30 transition-all duration-500 group-hover:w-full"></span></p>
           </Link>
           <Link href ="/" className="text-lg font-medium">
