@@ -1,4 +1,3 @@
-
 import Image from 'next/image'
 import ProfilePic from '@images/Profile.png'
 import NavBar from '@/components/navbar'

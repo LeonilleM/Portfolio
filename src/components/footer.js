@@ -1,7 +1,7 @@
 'use client'
 import Link from "next/link"
 import { useState } from 'react'
-
+import Resume from "../../public/resume/leonilleResume.pdf"
 function footer() {
   const [isCopied, setIsCopied] = useState(false);
 
@@ -31,7 +31,9 @@ function footer() {
             <li>
               <a
                 className="hover:text-dark duration-500 transform hover:text-lg"
-                href="/">
+                href={Resume}
+                target="_blank"
+                >
                 Resume
               </a>
             </li>
