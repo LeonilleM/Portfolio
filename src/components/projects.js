@@ -2,11 +2,12 @@ import Image from 'next/image'
 import habitTracker from '@images/habitTracker.jpg'
 import huskyConnect from '@images/huskyConnect.jpg'
 import { motion } from 'framer-motion'
+import { useEffect } from 'react'
 
-const ProjectsPortion = () => {
+const Projects = () => {
     return (
         <div id="project-section">
-            <div className="pt-36 mt-36 pb-20 container mx-auto lg:px-40 text-darkgray-c">
+            <div className="pt-36 mt-36 pb-20 container sm:mx-auto px-4 lg:px-40 text-darkgray-c">
                 <motion.div
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
@@ -23,16 +24,17 @@ const ProjectsPortion = () => {
                         viewPort={{ once: true }}
                     >
                         {/* Project One */}
-                        <div className="flex flex-col md:flex-row md:space-x-16">
-                            <Image src={habitTracker} className="w-[400px] h-[250px] rounded-lg" />
+                        <div className="flex flex-col md:flex-row md:space-x-16 sm:mx-0 ">
+                        <Image src={habitTracker} className="sm:w-[400px] w-auto sm:h-[250px] h-auto rounded-lg" />
                             <div className="flex flex-col md:flex-row md:space-x-16 font-roboto md:items-start items-center">
-                                <div className="flex flex-col">
+                                <div className="flex flex-col md:py-0 pb-4 items-center md:items-start">
                                     <h2 className="text-3xl font-bold">Habit Tracker</h2>
                                     <p>
                                         An app that let's users track their habits to see their progress and meet their goals.
                                     </p>
                                 </div>
-                                <p>One of my first full-stack projects that I did with 3 other group members. It utilized the frameowork Nuxt3, in which we utlized TypeScript as well as
+                                <p>
+                                    One of my first full-stack projects that I did with 3 other group members. It utilized the frameowork Nuxt3, in which we utlized TypeScript as well as
                                     Supabase for the backend. We also used another popular framework called TailWindCSS to style the app.
                                 </p>
                             </div>
@@ -45,10 +47,10 @@ const ProjectsPortion = () => {
                         transition={{ duration: 1.75 }}
                         viewPort={{ once: true }}
                     >
-                        <div className="flex flex-col md:flex-row md:space-x-16">
-                            <Image src={huskyConnect} className="w-[400px] h-[250px] rounded-lg" />
+                             <div className="flex flex-col md:flex-row md:space-x-16 sm:mx-0">
+                            <Image src={huskyConnect} className="sm:w-[400px] w-auto sm:h-[250px] h-auto rounded-lg" />
                             <div className="flex flex-col md:flex-row md:space-x-16 font-roboto md:items-start items-center">
-                                <div className="flex flex-col">
+                                <div className="flex flex-col md:py-0 pb-4 items-center md:items-start">
                                     <h2 className="text-3xl font-bold">Husky Connect</h2>
                                     <p>
                                         An app that let's UWB students connect with clubs and organizations on campus.
@@ -67,4 +69,4 @@ const ProjectsPortion = () => {
     )
 }
 
-export default ProjectsPortion
+export default Projects

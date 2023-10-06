@@ -4,7 +4,7 @@ import Image from "next/image";
 import LinkedInLogo from "../../public/images/LinkedIn.png";
 import GitHubLogo from "../../public/images/GitHub.png";
 import ScrollButton from "@design/scrollButton.svg"
-import { useState, useEffects } from 'react';
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
@@ -44,7 +44,7 @@ function Main() {
 
 
   return (
-    <div className="px-4 flex flex-col md:items-center">
+    <div className="px-2 flex flex-col md:items-center">
       <div className="pt-16 pb-28  sm:px-8 md:px-16 lg:px-24">
         <h1 className="text-2xl text-primary font-raleway font-light">Programmer / Student </h1>
         <h1 className="text-7xl font-roboto text-primary font-extrabold">Leonille</h1>
@@ -54,7 +54,7 @@ function Main() {
           <div className="mr-4 border-l-2 border-gray-300 border-solid h-48" style={{ borderColor: "#D3C3B3" }}></div>
           {/* Paragraph and Logos */}
           <div className="flex flex-col">
-            <p className="text-primary text-2xl sm:text-3xl mb-4 font-roboto">
+            <p className="text-primary text-xl sm:text-3xl mb-4 font-roboto">
               I'm an aspiring <span className="font-bold">Software Engineer</span>, who's looking forward to exploring new technologies and learning.
             </p>
             <div className="flex">
@@ -78,17 +78,19 @@ function Main() {
             </div>
           </div>
         </div>
-        <motion.div
-        initial={{ opacity: 1 }}
-        animate={{ opacity: 0 }}
-        transition={{ duration: 1 }}
-        viewPort={{ once: true }}
-        >
-          <div className="flex mt-24 flex-row  animate-bounce">
+        <Link href="#project-section">
+          <motion.div className="flex flex-row mt-52 animate-bounce"
+            initial={{ opacity: 1 }}
+            animate={{ opacity: inView && scrollingDown ? 0 : 1 }}
+            transition={{ duration: 2 }}
+          >
             <Image src={ScrollButton} className="w-10 h-10" />
             <h1 class="my-2">Scroll Down</h1>
-          </div>
-        </motion.div>
+          </motion.div>
+        </Link>
+        <div ref={ref}>
+
+        </div>
       </div>
     </div>
   );

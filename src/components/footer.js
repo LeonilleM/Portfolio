@@ -19,18 +19,15 @@ function footer() {
   return (
     <footer className="pb-8 font-raleway bottom-0">
       <div className="flex flex-col items-center">
-        <hr className="w-1/2 border-secondary" />
+        <hr className="md:w-1/2 w-3/4 border-secondary" />
         <div className="py-3">
           <h1 className="text-primary text-xl">@ 2023 Leonille Matunan</h1>
         </div>
         <div>
           <ul className="flex flex-wrap space-x-5 text-primary">
             <li>
-
-            </li>
-            <li>
               <a
-                className="hover:text-dark duration-500 transform hover:text-lg"
+                className="hover:text-dark"
                 href={Resume}
                 target="_blank"
                 >
