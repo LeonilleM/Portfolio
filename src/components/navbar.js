@@ -15,7 +15,7 @@ const NavBar = () => {
 
   return (
     <div>
-      <div className="flex flex-wrap items-center justify-between py-5 container mx-auto  font-raleway text-primary">
+      <div className="flex flex-wrap items-center justify-between py-5 container mx-auto  font-raleway text-5F826D">
         <Link href="/">
           <h1 className="text-3xl font-medium mx-2">Leonille Matunan</h1>
         </Link>
@@ -23,16 +23,16 @@ const NavBar = () => {
           <ul className="flex flex-wrap justify-between items-center space-x-5">
             <Link href="/about"
               className="text-lg font-medium">
-              <p className="relative group hover:text-dark">  <span>About</span>  <span className="absolute -bottom-0 left-0 w-0 h-7 bg-darker/30 transition-all duration-500 group-hover:w-full"></span></p>
+              <p className="relative group hover:text-4E4E4E">  <span>About</span>  <span className="absolute -bottom-0 left-0 w-0 h-7 bg-303837/30 transition-all duration-500 group-hover:w-full"></span></p>
             </Link>
             <Link href="/#project-section"
               className="text-lg font-medium">
-              <p className="relative group hover:text-dark">  <span>Portfolio</span>  <span className="absolute -bottom-0 left-0 w-0 h-7 bg-darker/30 transition-all duration-500 group-hover:w-full"></span></p>
+              <p className="relative group hover:text-4E4E4E">  <span>Portfolio</span>  <span className="absolute -bottom-0 left-0 w-0 h-7 bg-303837/30 transition-all duration-500 group-hover:w-full"></span></p>
             </Link>
             <Link href={Resume}
               target="_blank"
               className="text-lg font-medium">
-              <p className="relative group hover:text-dark">  <span>Resume</span>  <span className="absolute -bottom-0 left-0 w-0 h-7 bg-darker/30 transition-all duration-500 group-hover:w-full"></span></p>
+              <p className="relative group hover:text-4E4E4E">  <span>Resume</span>  <span className="absolute -bottom-0 left-0 w-0 h-7 bg-303837/30 transition-all duration-500 group-hover:w-full"></span></p>
             </Link>
           </ul>
         </div>
@@ -65,24 +65,24 @@ const NavBar = () => {
               className="fixed top-0 left-0 w-full h-full backdrop-blur-sm z-40 flex pt-4 justify-center "
               onClick={toggleDropdown}
             >
-              <div className={`max-w-full mt-16  z-10 text-primary transform transition-transform duration-200 ${ isOpen ? 'translate-x-0' : '-translate-x-full' }`}>
+              <div className={`max-w-full mt-16  z-10 text-5F826D transform transition-transform duration-200 ${ isOpen ? 'translate-x-0' : '-translate-x-full' }`}>
                 <ul className="flex flex-wrap justify-between items-center space-x-5">
                   <Link href="/about" className="text-lg font-medium">
-                    <p className="relative group hover:text-dark">
+                    <p className="relative group hover:text-4E4E4E">
                       <span>About</span>{" "}
-                      <span className="absolute -bottom-0 left-0 w-0 h-7 bg-darker/30 transition-all duration-500 group-hover:w-full"></span>
+                      <span className="absolute -bottom-0 left-0 w-0 h-7 bg-303837/30 transition-all duration-500 group-hover:w-full"></span>
                     </p>
                   </Link>
                   <Link href="/#project-section" className="text-lg font-medium">
-                    <p className="relative group hover:text-dark">
+                    <p className="relative group hover:text-4E4E4E">
                       <span>Portfolio</span>{" "}
-                      <span className="absolute -bottom-0 left-0 w-0 h-7 bg-darker/30 transition-all duration-500 group-hover:w-full"></span>
+                      <span className="absolute -bottom-0 left-0 w-0 h-7 bg-303837/30 transition-all duration-500 group-hover:w-full"></span>
                     </p>
                   </Link>
                   <Link href={Resume} target="_blank" className="text-lg font-medium">
-                    <p className="relative group hover:text-dark">
+                    <p className="relative group hover:text-4E4E4E">
                       <span>Resume</span>{" "}
-                      <span className="absolute -bottom-0 left-0 w-0 h-7 bg-darker/30 transition-all duration-500 group-hover:w-full"></span>
+                      <span className="absolute -bottom-0 left-0 w-0 h-7 bg-303837/30 transition-all duration-500 group-hover:w-full"></span>
                     </p>
                   </Link>
                 </ul>
