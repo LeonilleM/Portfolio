@@ -1,67 +1,69 @@
 import Image from 'next/image'
-import habitTracker from '@images/habitTracker.jpg'
+import habitTracker from '@images/habitTracker.png'
 import huskyConnect from '@images/huskyConnect.jpg'
 import { motion } from 'framer-motion'
 import { useEffect } from 'react'
+import Link from 'next/link'
 
 const Projects = () => {
     return (
-        <div id="project-section">
-            <div className="pt-36 mt-36 pb-20 container sm:mx-auto px-4 lg:px-40 text-darkgray-c">
+        <div>
+            <div className="pt-36 pb-20 container mx-auto px-4 lg:px-40 text-darkgray-c space-y-6" id="project-section">
                 <motion.div
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     transition={{ duration: 1.25 }}
-                    viewPort={{ once: true }}
                 >
-                    <h1 className="text-5xl text-darker font-roboto mb-4">Portfolio</h1>
+                    <h1 className="text-5xl text-4E4E4E font-roboto mb-4">Portfolio</h1>
                 </motion.div>
                 <div className="py-2 space-y-20">
+                    {/* Project One */}
                     <motion.div
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
                         transition={{ duration: 1.5 }}
-                        viewPort={{ once: true }}
                     >
-                        {/* Project One */}
-                        <div className="flex flex-col md:flex-row md:space-x-16 sm:mx-0 ">
-                        <Image src={habitTracker} className="sm:w-[400px] w-auto sm:h-[250px] h-auto rounded-lg" />
-                            <div className="flex flex-col md:flex-row md:space-x-16 font-roboto md:items-start items-center">
-                                <div className="flex flex-col md:py-0 pb-4 items-center md:items-start">
-                                    <h2 className="text-3xl font-bold">Habit Tracker</h2>
-                                    <p>
-                                        An app that let's users track their habits to see their progress and meet their goals.
-                                    </p>
-                                </div>
-                                <p>
-                                    One of my first full-stack projects that I did with 3 other group members. It utilized the frameowork Nuxt3, in which we utlized TypeScript as well as
-                                    Supabase for the backend. We also used another popular framework called TailWindCSS to style the app.
-                                </p>
+                        <div className="md:grid grid-flow-row-dense grid-cols-3 gap-4 space-y-2 sm:space-y-0 text-303837">
+                            <Image src={habitTracker} alt="Habit Tracker" className="rounded-lg sm:h-[225px] sm:w-[400px] w-auto h-auto border border-D3C3B3/30" />
+                            <div className="flex flex-col space-y-2 sm:pl-10">
+                                <h1 className="text-4xl font-bold text-4E4E4E font-roboto"> MOMENTUM</h1>
+                                <p className="font-medium">Tracking your habit progress</p>
+                                <button className="bg-transparent border border-303837 roounded text-303837 font-semibold px-2 py-1 rounded-lg w-24  hover:bg-D3C3B3 hover:border-transparent hover:text-white">
+                                    <Link href="https://css-habits.vercel.app/" target='_blank'>View</Link>
+                                </button>
                             </div>
+                            <p className="sm:pt-0 pt-3">
+                                One of my first full-stack projects was completed with three other group members.
+                                We utilized the Nuxt 3 framework, which is based on Vite, Vue.js, and Nitro, to create our front end.
+                                For styling, we used Tailwind CSS. Lastly, we used Supabase as our database.
+                                While working with Supabase, we incorporated TypeScript for type checking and improved code quality.
+                            </p>
                         </div>
                     </motion.div>
                     {/* Project Two */}
                     <motion.div
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
-                        transition={{ duration: 1.75 }}
-                        viewPort={{ once: true }}
+                        transition={{ duration: 1.5 }}
                     >
-                             <div className="flex flex-col md:flex-row md:space-x-16 sm:mx-0">
-                            <Image src={huskyConnect} className="sm:w-[400px] w-auto sm:h-[250px] h-auto rounded-lg" />
-                            <div className="flex flex-col md:flex-row md:space-x-16 font-roboto md:items-start items-center">
-                                <div className="flex flex-col md:py-0 pb-4 items-center md:items-start">
-                                    <h2 className="text-3xl font-bold">Husky Connect</h2>
-                                    <p>
-                                        An app that let's UWB students connect with clubs and organizations on campus.
-                                    </p>
-                                </div>
-                                <p> My personal project that's still in progress. It's built upon React for my frontend, and TailWindCSS for styling. I've also utialized Docker
-                                    to containerize database which is MySQL, and I'm currently working on the backend with Express.js. I plan to deploy this app once it's finished.
-                                </p>
+                        <div className="md:grid grid-flow-row-dense grid-cols-3 gap-4 space-y-2 sm:space-y-0 text-303837">
+                            <Image src={huskyConnect} alt="Husky Connect" className="rounded-lg sm:h-[225px] sm:w-[400px] border border-D3C3B3/30" />
+                            <div className="flex flex-col space-y-2 sm:pl-10">
+                                <h1 className="text-4xl font-bold text-4E4E4E font-roboto"> HUSKY CONNECT</h1>
+                                <p className="font-medium">Connecting students & clubs</p>
+                                <button className="bg-transparent border border-303837 roounded text-303837 font-semibold px-2 py-1 rounded-lg w-24  hover:bg-D3C3B3 hover:border-transparent hover:text-white">
+                                    Soon!
+                                </button>
                             </div>
+                            <p className="sm:pt-0 pt-3">
+                                I'm working on a project combining React for the frontend, Tailwind CSS for styling, and Express.js for the backend.
+                                I've containerized the MySQL database with Docker.
+                                The goal is to create a user-friendly web app, and I plan to deploy it once it's finished.
+                            </p>
                         </div>
                     </motion.div>
+
+
 
                 </div>
             </div>

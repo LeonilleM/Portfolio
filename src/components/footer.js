@@ -19,15 +19,15 @@ function footer() {
   return (
     <footer className="pb-8 font-raleway bottom-0">
       <div className="flex flex-col items-center">
-        <hr className="md:w-1/2 w-3/4 border-secondary" />
+        <hr className="md:w-1/2 w-3/4 border-D3C3B3" />
         <div className="py-3">
-          <h1 className="text-primary text-xl">@ 2023 Leonille Matunan</h1>
+          <h1 className="text-5F826D text-lg">@ 2023 Leonille Matunan</h1>
         </div>
         <div>
-          <ul className="flex flex-wrap space-x-5 text-primary">
+          <ul className="flex flex-wrap space-x-5 text-5F826D">
             <li>
               <a
-                className="hover:text-dark"
+                className="hover:text-dark duration-500 hover:text-lg hover:text-303837"
                 href={Resume}
                 target="_blank"
                 >
@@ -36,7 +36,7 @@ function footer() {
             </li>
             <li>
               <button
-                className="hover:text-dark duration-500 hover:text-lg"
+                className="hover:text-dark duration-500 hover:text-lg hover:text-303837"
                 onClick={copyToClipboard}
               >
                 Email
@@ -45,7 +45,7 @@ function footer() {
             </li>
             <li>
               <Link
-                className="hover:text-dark duration-500 hover:text-lg"
+                className="hover:text-dark duration-500 hover:text-lg hover:text-303837"
                 href="https://github.com/LeonilleM"
                 target="_blanks"
               >
@@ -54,7 +54,7 @@ function footer() {
             </li>
             <li>
               <Link
-                className="hover:text-dark duration-500 hover:text-lg"
+                className="hover:text-dark duration-500 hover:text-lg hover:text-303837"
                 href="https://www.linkedin.com/in/leonille-matunan/"
                 target="_blanks"
               >

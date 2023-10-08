@@ -14,12 +14,12 @@ module.exports = {
        raleway: ['var(--font-raleway)', ...fontFamily.sans],
       },
       colors:{
-        primary: '#5F826D',
-        dark: '#3C5241',
-        secondary: '#D3C3B3',
-        light: '#F5F0E7',
-        darker: '#4E4E4E',
-        'darkgray-c': '#303837'
+        '5F826D': '#5F826D',
+        '3C5241': '#3C5241',
+        'D3C3B3': '#D3C3B3',
+        'F5F0E7': '#F5F0E7',
+        '4E4E4E': '#4E4E4E',
+        '303837': '#303837'
       }
     },
   },
