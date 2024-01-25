@@ -1,6 +1,6 @@
 'use client'
 import Link from "next/link"
-import Resume from '../../public/resume/leonilleResume.pdf'
+import Resume from '../../public/resume/Leonille_Matunan_Resumev2.pdf'
 import { useState } from "react"
 
 const NavBar = () => {
@@ -65,7 +65,7 @@ const NavBar = () => {
               className="fixed top-0 left-0 w-full h-full backdrop-blur-sm z-40 flex pt-4 justify-center "
               onClick={toggleDropdown}
             >
-              <div className={`max-w-full mt-16  z-10 text-5F826D transform transition-transform duration-200 ${ isOpen ? 'translate-x-0' : '-translate-x-full' }`}>
+              <div className={`max-w-full mt-16  z-10 text-5F826D transform transition-transform duration-200 ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}>
                 <ul className="flex flex-wrap justify-between items-center space-x-5">
                   <Link href="/about" className="text-lg font-medium">
                     <p className="relative group hover:text-4E4E4E">
