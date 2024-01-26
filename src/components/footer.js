@@ -1,7 +1,7 @@
 'use client'
 import Link from "next/link"
 import { useState } from 'react'
-import Resume from "../../public/resume/leonilleResume.pdf"
+import Resume from "../../public/resume/Leonille_Matunan_Resumev2.pdf"
 function footer() {
   const [isCopied, setIsCopied] = useState(false);
 
