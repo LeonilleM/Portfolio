@@ -1,6 +1,6 @@
 'use client'
 import Link from "next/link"
-import Resume from '../../public/resume/Leonille_Matunan_Resumev2.pdf'
+import Resume from '../../public/resume/LM_RESUME.pdf'
 import { useState } from "react"
 
 const NavBar = () => {
