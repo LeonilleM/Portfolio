@@ -2,7 +2,11 @@
 import Link from "next/link"
 import { useState } from 'react'
 import Resume from "../../public/resume/Leonille_Matunan_Resumev2.pdf"
-import Star1 from '@design/Star4.png'
+import Image from 'next/image'
+import Star1 from '@design/Shape4.png'
+import Star2 from '@design/Shape6.png'
+import Star3 from '@design/Shape7.png'
+import Star4 from '@design/Shape8.png'
 
 
 
@@ -22,9 +26,13 @@ function footer() {
 
   return (
     <footer className="pb-24 font-raleway bottom-0 container mx-auto">
+      <Image src={Star1} alt="star" draggable="false" className="absolute translate-y-2 md:left-1/4 left-8 w-12 h-12" />
+      <Image src={Star2} alt="star" draggable="false" className="absolute translate-y-24  right-14 w-12 h-12" />
+      <Image src={Star3} alt="star" draggable="false" className="lg:block hidden absolute translate-y-2 xl:right-[40rem] right-[7rem]  w-28 h-28" />
+      <Image src={Star4} alt="star" draggable="false" className="lg:block hidden absolute translate-y-16 xl:left-[40rem] left-[5rem] w-28 h-28" />
       <div className="flex flex-col items-center">
         <hr className="w-full  border-D3C3B3" />
-        <div className="pt-3">
+        <div className="pt-6">
           <h1 className="text-5F826D text-lg">@ 2023 Leonille Matunan</h1>
         </div>
         <div>
