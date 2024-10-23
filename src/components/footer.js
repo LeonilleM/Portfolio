@@ -1,7 +1,7 @@
 'use client'
 import Link from "next/link"
 import { useState } from 'react'
-import Resume from "../../public/resume/Leonille_Matunan_Resumev2.pdf"
+import Resume from "../../public/resume/LM_Resume.pdf"
 import Image from 'next/image'
 import Star1 from '@design/Shape4.png'
 import Star2 from '@design/Shape6.png'
@@ -44,9 +44,9 @@ function footer() {
                 target="_blank"
               >
                 <span className="text-4E4E4E text-xl font-semibold"> &gt;</span> Resume
-                <span className="absolute -bottom-1 left-0 w-0 transition-all ease-in-out duration-300 h-0.5 bg-1E1E1E group-hover:w-full"></span>
-              </a>
-            </li>
+                < span className="absolute -bottom-1 left-0 w-0 transition-all ease-in-out duration-300 h-0.5 bg-1E1E1E group-hover:w-full" ></span >
+              </a >
+            </li >
             <li>
               <button
                 className="group relative w-max ease-in-out duration-700  hover:text-1E1E1E"
@@ -77,10 +77,10 @@ function footer() {
                 <span className="absolute -bottom-1 left-0 w-0 transition-all ease-in-out duration-300 h-0.5 bg-1E1E1E group-hover:w-full"></span>
               </Link>
             </li>
-          </ul>
-        </div>
-      </div>
-    </footer>
+          </ul >
+        </div >
+      </div >
+    </footer >
   )
 }
 

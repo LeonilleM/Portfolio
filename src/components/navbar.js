@@ -1,6 +1,7 @@
 'use client'
 import Link from "next/link"
 import { motion, AnimatePresence } from "framer-motion"
+import Resume from '../../public/resume/LM_RESUME.pdf'
 import { useState } from "react"
 
 const Path = ({ stroke, ...props }) => (
@@ -128,7 +129,7 @@ const NavBar = ({
                 <div className="flex flex-col items-center space-y-6">
                   <NavLink href="/about" text="About" mobile textColor={openText} hoverBg={hoverBg} hoverText={hoverText} />
                   <NavLink href="/#project-section" text="Portfolio" mobile textColor={openText} hoverBg={hoverBg} hoverText={hoverText} />
-                  <NavLink href="/resume" text="Resume" target="_blank" mobile textColor={openText} hoverBg={hoverBg} hoverText={hoverText} />
+                  <NavLink href={Resume} text="Resume" target="_blank" mobile textColor={openText} hoverBg={hoverBg} hoverText={hoverText} />
                 </div>
               </motion.div>
             </motion.div>
