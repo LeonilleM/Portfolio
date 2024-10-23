@@ -1,5 +1,6 @@
 'use client'
 import { useState } from 'react'
+import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Main from '../components/main.js'
 import NavBar from '../components/navbar.js'
@@ -13,14 +14,19 @@ import Star5 from '@design/Shape5.png'
 import Star6 from '@design/Shape6.png'
 
 
+
 export default function Home() {
   const [isStarHovered, setIsStarHovered] = useState(false);
 
   return (
     <main className="bg-F5F0E7">
       <NavBar />
-      <div className="relative">
-        {/* Conditionally render stars based on screen size */}
+      <motion.div
+        initial={{ y: -50, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.75 }}
+        viewport={{ once: true }}
+        className="relative">
         <Image src={Star5} className="hidden lg:block absolute top-36 left-1/2 -translate-x-[34rem] sm:w-14 sm:h-14" alt="Star" />
         <Image src={Star4} className="hidden lg:block absolute top-32 right-1/2 translate-x-[22rem] w-24 h-28" alt="Star" />
         <Image src={Star} className="hidden lg:block absolute top-80  left-1/2 -translate-x-[28rem] sm:w-10 sm:h-10" alt="Star" />
@@ -33,7 +39,7 @@ export default function Home() {
           onMouseLeave={() => setIsStarHovered(false)}
           alt="Star"
         />
-      </div>
+      </motion.div>
       <Main />
       <ProjectSection />
       <Footer />
