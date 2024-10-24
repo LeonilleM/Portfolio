@@ -87,7 +87,7 @@ const NavBar = ({
           <ul className="flex flex-wrap justify-between items-center space-x-5">
             <NavLink href="/about" text="About" textColor={currentText} hoverBg={hoverBg} hoverText={hoverText} />
             <NavLink href="/#project-section" text="Portfolio" textColor={currentText} hoverBg={hoverBg} hoverText={hoverText} />
-            <NavLink href="/resume" text="Resume" target="_blank" textColor={currentText} hoverBg={hoverBg} hoverText={hoverText} />
+            <NavLink href={Resume} text="Resume" target="_blank" textColor={currentText} hoverBg={hoverBg} hoverText={hoverText} />
           </ul>
         </div>
 

@@ -1,7 +1,7 @@
 'use client'
 import Link from "next/link"
 import { useState } from 'react'
-import Resume from "../../public/resume/LM_Resume.pdf"
+import Resume from "../../public/resume/LM_RESUME.pdf"
 import Image from 'next/image'
 import Star1 from '@design/Shape4.png'
 import Star2 from '@design/Shape6.png'

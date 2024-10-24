@@ -1,5 +1,5 @@
 'use client'
-import { motion, useScroll, useTransform, MotionValue } from "framer-motion";
+import { motion, useScroll } from "framer-motion";
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import Button from '@/components/button';
