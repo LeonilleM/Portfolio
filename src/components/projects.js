@@ -276,7 +276,7 @@ const Projects = () => {
                                 transition={{ duration: 1 }}
                                 viewport={{ once: true }}
                             >
-                                <Link href="https://github.com/LeonilleM/studdyspotter/tree/master"
+                                <Link href="https://github.com/LeonilleM/studdy_spotter/tree/new_feature"
                                     className="block cursor-pointer group relative"
                                     target="_blank"
                                 >
