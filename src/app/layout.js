@@ -4,10 +4,8 @@ import { raleway, lato } from '../style/fonts.js';
 
 export default function RootLayout({ children }) {
   return (
-    <>
-      <html lang="en" className={`${raleway.variable} ${lato.variable}`}>
-        <body>{children}</body>
-      </html>
-    </>
+    <html lang="en" className={`${raleway.variable} ${lato.variable}`}>
+      <body>{children}</body>
+    </html>
   );
 }

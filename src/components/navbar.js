@@ -1,18 +1,19 @@
 'use client'
 import Link from "next/link"
 import { motion, AnimatePresence } from "framer-motion"
-import Resume from '../../public/resume/LM_RESUME.pdf'
 import { useState } from "react"
 
-const Path = ({ stroke, ...props }) => (
+const Path = ({ stroke, variants, ...props }) => (
   <motion.path
     fill="transparent"
     strokeLinecap="round"
     strokeWidth="2"
     stroke={stroke}
+    variants={variants}
     {...props}
   />
 );
+
 
 const MenuButton = ({ isOpen, toggle, className, closedColor, openColor }) => {
   return (
@@ -34,7 +35,7 @@ const MenuButton = ({ isOpen, toggle, className, closedColor, openColor }) => {
           stroke={isOpen ? openColor : closedColor}
           variants={{
             closed: { d: "M 4 12 L 20 12", opacity: 1 },
-            open: { opacity: 0 }
+            open: { d: "M 4 12 L 20 12", opacity: 0 }
           }}
           transition={{ duration: 0.3 }}
         />
@@ -75,6 +76,8 @@ const NavBar = ({
   const currentBg = isOpen ? openBg : closedBg;
   const currentText = isOpen ? openText : closedText;
 
+  const resumePath = '/resume/Matunan_resume.pdf';
+
   return (
     <div className={`${currentBg} relative z-50 `}>
       <div className={`flex flex-wrap items-center justify-between py-5 container mx-auto font-raleway`}>
@@ -87,7 +90,7 @@ const NavBar = ({
           <ul className="flex flex-wrap justify-between items-center space-x-5">
             <NavLink href="/about" text="About" textColor={currentText} hoverBg={hoverBg} hoverText={hoverText} />
             <NavLink href="/#project-section" text="Portfolio" textColor={currentText} hoverBg={hoverBg} hoverText={hoverText} />
-            <NavLink href={Resume} text="Resume" target="_blank" textColor={currentText} hoverBg={hoverBg} hoverText={hoverText} />
+            <NavLink href={resumePath} text="Resume" target="_blank" textColor={currentText} hoverBg={hoverBg} hoverText={hoverText} />
           </ul>
         </div>
 
@@ -109,7 +112,7 @@ const NavBar = ({
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              transition={{ duration: 0.3 }} // Slightly longer duration for fade
+              transition={{ duration: 0.3 }}
               className={`fixed inset-0 ${mobileOverlayBg} backdrop-blur-sm z-40`}
               onClick={toggleMenu}
             >
@@ -119,9 +122,9 @@ const NavBar = ({
                 exit={{ y: "-100%", opacity: 0 }} // Added opacity to exit for smoother transition
                 transition={{
                   type: "spring",
-                  damping: 20, // Reduce damping for a more responsive feel
-                  stiffness: 150, // Adjust stiffness for a more controlled spring
-                  mass: 0.5 // Lighter mass for quicker response
+                  damping: 20,
+                  stiffness: 150,
+                  mass: 0.5
                 }}
                 className={`absolute top-0 left-0 w-full ${mobileMenuBg} shadow-lg pt-24 pb-8 px-6`}
                 onClick={e => e.stopPropagation()}
@@ -129,7 +132,7 @@ const NavBar = ({
                 <div className="flex flex-col items-center space-y-6">
                   <NavLink href="/about" text="About" mobile textColor={openText} hoverBg={hoverBg} hoverText={hoverText} />
                   <NavLink href="/#project-section" text="Portfolio" mobile textColor={openText} hoverBg={hoverBg} hoverText={hoverText} />
-                  <NavLink href={Resume} text="Resume" target="_blank" mobile textColor={openText} hoverBg={hoverBg} hoverText={hoverText} />
+                  <NavLink href={resumePath} text="Resume" target="_blank" mobile textColor={openText} hoverBg={hoverBg} hoverText={hoverText} />
                 </div>
               </motion.div>
             </motion.div>

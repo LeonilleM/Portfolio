@@ -52,8 +52,6 @@ function MindfulU() {
                 mobileMenuBg="bg-white"
                 mobileOverlayBg="bg-7CAFEB/80"
             />
-
-
             {/* Header */}
             <div className="flex lg:flex-row flex-col  bg-7CAFEB md:px-36 px-4 gap-36 py-14 font-raleway">
                 <motion.div

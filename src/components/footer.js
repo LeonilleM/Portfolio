@@ -1,7 +1,6 @@
 'use client'
 import Link from "next/link"
 import { useState } from 'react'
-import Resume from "../../public/resume/LM_RESUME.pdf"
 import Image from 'next/image'
 import Star1 from '@design/Shape4.png'
 import Star2 from '@design/Shape6.png'
@@ -21,8 +20,9 @@ function footer() {
     setTimeout(() => {
       setIsCopied(false);
     }, 2000);
-
   };
+
+  const resumePath = '/resume/Matunan_resume.pdf'
 
   return (
     <footer className="pb-24 font-raleway bottom-0 container mx-auto">
@@ -40,7 +40,7 @@ function footer() {
             <li>
               <a
                 className="group relative w-max ease-in-out duration-700  hover:text-1E1E1E"
-                href={Resume}
+                href={resumePath}
                 target="_blank"
               >
                 <span className="text-4E4E4E text-xl font-semibold"> &gt;</span> Resume
